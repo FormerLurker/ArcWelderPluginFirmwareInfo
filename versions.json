@@ -3,6 +3,7 @@
     {
       "version": "1.0.0",
       "version_folder": "1_0_0",
+      "plugin_compatibility": ">=1.1",
       "last_update": "11/09/2020"
     }
   ]
