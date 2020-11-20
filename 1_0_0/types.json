@@ -22,9 +22,10 @@
 					"supported": true,
 					"recommended": false,
 					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"arcs_enabled": true,
 					"g90_g91_influences_extruder": false,
-					"notes": "The default arc settings can cause flat edges for curves with a radius around 1-2mm, and some slowdown can be expected if MM_PER_ARC_SEGMENT is reduced below 1.0."
+					"notes": "The default arc settings can cause flat edges for very small arcs with a radius around 1-5mm"
 				},
 				{
 					"guid": "b8cf8ab2-333c-4812-a1af-ca2093ec9f0d",
@@ -32,6 +33,7 @@
 					"supported": true,
 					"recommended": "None",
 					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"arcs_enabled": true,
 					"is_future": true,
 					"g90_g91_influences_extruder": false,
@@ -60,6 +62,7 @@
 					"supported": true,
 					"recommended": false,
 					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"g90_g91_influences_extruder": true,
 					"notes": "This firmware has not been updated to include arc planning fixes implemented in Marlin 2.0.6."
 				},
@@ -91,14 +94,16 @@
 				},
 				{
 					"guid": "d2688900-92a6-411a-8d39-8374a44a478e",
-					"version": "<1.0.0",
+					"version": "<1.1.0",
 					"supported": false,
 					"recommended": false
 				},
 				{
 					"guid": "8aa1f350-65f3-4824-8c31-b7feb4abcbec",
-					"version": ">=1.0.0,<2.0.0",
+					"version": ">=1.1.0,<2.0.0",
 					"supported": true,
+					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"recommended": false
 				},
 				{
@@ -107,6 +112,7 @@
 					"supported": true,
 					"recommended": false,
 					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"g90_g91_influences_extruder": true
 				},
 				{
@@ -115,6 +121,7 @@
 					"supported": true,
 					"recommended": true,
 					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"g90_g91_influences_extruder": true
 				},
 				{
@@ -124,6 +131,7 @@
 					"recommended": true,
 					"is_future": true,
 					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"g90_g91_influences_extruder": true
 				}
 			]
@@ -143,6 +151,7 @@
 					"supported": true,
 					"recommended": true,
 					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"notes": "This is a virtual printer."
 				},
 				{
@@ -151,6 +160,7 @@
 					"supported": true,
 					"recommended": true,
 					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"is_future": true
 				}
 			]
@@ -174,6 +184,8 @@
 					"guid": "f691ee9a-fa2a-48ce-a11d-b97ebed177f7",
 					"version": ">=0.8.0,<0.9.0",
 					"supported": true,
+					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"recommended": false,
 					"notes": "Arc support is there, but there are bugs in absolute extrusion mode that could result in very little extrusion.  If you experience problems, upgrade to at least v{recommended_version}."
 				},
@@ -182,7 +194,8 @@
 					"version": "=0.9.0",
 					"supported": true,
 					"recommended": true,
-					"g2_g3_supported": true
+					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true
 				},
 				{
 					"guid": "aa065880-71b5-4ebe-a90f-665433807758",
@@ -190,6 +203,7 @@
 					"supported": true,
 					"recommended": true,
 					"g2_g3_supported": true,
+					"g2_g3_z_parameter_supported": true,
 					"is_future": true
 				}
 			]
@@ -201,23 +215,7 @@
 				"get_date": "get_date_smoothieware"
 			},
 			"version_compare_type": "date",
-			"help_file": "firmware_smoothieware.md",
-			"versions": [
-				{
-					"guid": "2d468d37-e8dc-467e-9505-0ea00640772e",
-					"version": "<Nov 04 2020 00:00:00",
-					"supported": false,
-					"recommended": false
-				},
-				{
-					"guid": "3a166cc2-ff62-4011-aa70-ffa96950a105",
-					"version": ">=Nov 04 2020 00:00:00",
-					"supported": true,
-					"recommended": true,
-					"is_future": true,
-					"g2_g3_supported": true
-				}
-			]
+			"help_file": "firmware_smoothieware.md"
 		},
 		"RegexFirmwareTest": {
 			"name": "Regex Firmware Test",
