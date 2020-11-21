@@ -122,7 +122,8 @@
 					"recommended": true,
 					"g2_g3_supported": true,
 					"g2_g3_z_parameter_supported": true,
-					"g90_g91_influences_extruder": true
+					"g90_g91_influences_extruder": true,
+					"help_file": "firmware_marlin_2.0.7.2.md"
 				},
 				{
 					"guid": "aa065880-71b5-4ebe-a90f-665433807758",
