@@ -5,6 +5,12 @@
       "version_folder": "1_0_0",
       "plugin_compatibility": ">1.0",
       "last_update": "11/09/2020"
+    },
+    {
+      "version": "1.0.1",
+      "version_folder": "1_0_1",
+      "plugin_compatibility": ">1.0",
+      "last_update": "11/21/2020"
     }
   ]
 
