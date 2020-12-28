@@ -86,7 +86,6 @@
 				{
 					"guid": "81848e9e-c41a-44dc-bddc-bf0e4df8f16b",
 					"version": "=bugfix-2.0.x",
-					"supported": false,
 					"known_issues": ["Firmware forks that are running the bugfix branch, like this one, often do not provide an exact version number, so it's not possible to tell what problems there may be."]
 				},
 				{
